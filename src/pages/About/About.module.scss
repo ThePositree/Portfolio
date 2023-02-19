@@ -1,0 +1,39 @@
+.wrapper {
+	border: 1px solid black;
+	height: 800px;
+	max-width: 1000px;
+	@apply bg-white shadow-xl mb-auto flex flex-col
+		justify-between;
+	width: 100%;
+}
+
+.header {
+	border-bottom: 1px solid rgb(230, 230, 230);
+	@apply flex items-center;
+}
+.content {
+	@apply w-full resize-none overflow-hidden h-full outline-none;
+}
+.footer {
+	background-color: rgb(230, 230, 230);
+	@apply flex justify-end;
+}
+
+.cell {
+	@apply px-2;
+	border-left: 1px solid rgb(196, 196, 196);
+	border-top: 1px solid rgb(196, 196, 196);
+}
+.img {
+	@apply bg-transparent object-cover mx-1 h-5;
+}
+
+@media (max-width: 1020px) {
+	.wrapper {
+		position: absolute;
+		width: auto;
+		max-width: 1000px;
+		left: 10px;
+		right: 10px;
+	}
+}

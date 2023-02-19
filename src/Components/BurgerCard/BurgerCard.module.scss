@@ -1,0 +1,45 @@
+.wrapper {
+  @apply flex flex-col justify-center items-center text-slate-500 font-semibold bg-white rounded-xl shadow-xl border-4 border-slate-500 p-5 transition-transform;
+  &:hover {
+    @apply scale-105;
+  }
+}
+
+.button {
+  @apply bg-white border-2 rounded-xl p-2 border-slate-500 transition-colors;
+}
+
+.button:hover {
+  @apply bg-slate-500 text-white;
+}
+
+.button:active {
+  @apply bg-slate-700 text-white;
+}
+
+.price-wrapper-1,
+.price-wrapper-2 {
+  @apply flex justify-center items-center text-lg mb-2;
+}
+
+.price-wrapper-1 {
+  @apply flex-col;
+}
+
+.price,
+.sale-price,
+.sale {
+  @apply mr-1;
+}
+
+.sale-price {
+  @apply line-through;
+}
+
+.title {
+  @apply text-center text-xl;
+}
+
+.inner-price {
+  @apply flex justify-center items-center;
+}

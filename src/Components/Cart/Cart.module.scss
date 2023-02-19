@@ -1,0 +1,74 @@
+.wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  @apply flex justify-center items-center text-slate-700;
+}
+
+.inner {
+  @apply rounded-lg p-5 bg-slate-200 min-w-[320px] max-w-3xl w-full mx-2;
+}
+
+.title {
+  @apply mx-2;
+}
+
+.price {
+  @apply mr-2;
+}
+
+.top {
+  @apply flex justify-between items-center;
+}
+
+.close {
+  @apply text-slate-700 text-lg rounded-full border-2 border-slate-700 w-10 h-10 transition-colors;
+}
+
+.content {
+  @apply mt-4 max-h-96 mb-5;
+  overflow: auto;
+}
+
+.card {
+  @apply flex items-center justify-between bg-slate-700 text-slate-200 p-2 rounded-lg shadow-lg;
+}
+
+.buy {
+  @apply bg-slate-700 border-2 rounded-xl p-2 transition-colors text-slate-200 flex;
+}
+
+.card + .card {
+  @apply mt-2;
+}
+
+.amount {
+  @apply flex items-center;
+}
+
+.plus,
+.minus {
+  @apply flex justify-center items-center border-2 rounded-full w-7 h-7 border-slate-200 pb-1 text-xl transition-colors;
+}
+
+.buy:hover,
+.plus:hover,
+.close:hover,
+.minus:hover {
+  @apply bg-slate-900;
+}
+
+.close:hover {
+  @apply text-slate-200;
+}
+
+.text-amount {
+  @apply mx-2;
+}
+
+.bottom {
+  @apply flex justify-between items-center;
+}

@@ -1,0 +1,160 @@
+.inner {
+  @apply h-80 flex justify-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.track,
+.track2,
+.runner {
+  position: absolute;
+  top: 20rem;
+  left: 0;
+  transform: translateY(-100%);
+}
+
+.runner {
+  z-index: 2;
+}
+
+.track {
+  top: 21.5rem;
+}
+.track2 {
+  top: 21.5rem;
+  left: 100%;
+}
+
+.track-active {
+  animation: swipe-track 2s linear infinite;
+}
+.track-active-2 {
+  animation: swipe-track-2 2s linear infinite;
+}
+
+.cactus {
+  position: absolute;
+  top: 20rem;
+  right: 0;
+  transform: translateY(-100%);
+  z-index: 0;
+}
+
+.cactus-play-1 {
+  animation: swipe 2s linear infinite;
+}
+.cactus-play-2 {
+  animation: swipe 1.5s linear infinite;
+}
+.cactus-play-3 {
+  animation: swipe 1s linear infinite;
+}
+
+.runner-active {
+  animation: jump 0.7s ease infinite;
+}
+.runner-3-active {
+  animation: jump 1s ease infinite;
+}
+
+.wrapper-game-over {
+  position: absolute;
+  top: 2.5rem;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  left: 2.5rem;
+  display: none;
+  z-index: 3;
+  @apply bg-slate-700 rounded-lg items-center justify-center flex-col text-slate-200 font-semibold;
+}
+
+.game-over-text {
+  @apply text-3xl font-bold mb-5;
+}
+
+.button {
+  @apply bg-slate-500 border-2 rounded-full p-2 border-slate-200 mt-5;
+}
+
+.score {
+  @apply text-slate-700 font-semibold text-xl;
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1000px;
+  @apply bg-slate-200 shadow-xl rounded-lg p-10 w-full;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  @apply rounded-lg;
+}
+
+.test {
+  position: absolute;
+  bottom: 40px;
+  left: 90px;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+}
+
+.game-over {
+  .wrapper-game-over {
+    display: flex;
+  }
+}
+
+.game-over + .shadow {
+  display: flex;
+}
+
+@keyframes jump {
+  0% {
+    top: 20rem;
+  }
+
+  50% {
+    top: 10rem;
+  }
+
+  100% {
+    top: 20rem;
+  }
+}
+@keyframes swipe {
+  0% {
+    right: 0;
+  }
+
+  100% {
+    right: 100%;
+  }
+}
+@keyframes swipe-track {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+@keyframes swipe-track-2 {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0;
+  }
+}

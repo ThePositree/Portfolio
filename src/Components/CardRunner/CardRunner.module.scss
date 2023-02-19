@@ -1,0 +1,20 @@
+.wrapper {
+  @apply bg-slate-600 max-w-xs flex items-center justify-between flex-col shadow-xl rounded-lg p-5;
+}
+
+.button {
+  @apply bg-slate-200 border-2 rounded-lg p-2 border-slate-900 text-slate-900 font-semibold w-full flex justify-center items-center h-11;
+}
+
+.price {
+  @apply mr-1;
+}
+
+.wrapper-img {
+  background-color: white;
+  @apply shadow-xl rounded-lg mb-4 h-52 flex flex-col items-center justify-end;
+}
+
+.track {
+  @apply w-full;
+}

@@ -1,0 +1,25 @@
+.label {
+  min-height: 4rem;
+  @apply flex flex-col justify-center items-center p-1 w-16;
+  border: 1px solid transparent;
+  user-select: none;
+  &:hover {
+    cursor: default;
+    background-color: rgba(167, 167, 247, 0.15);
+    border: 1px solid rgba(167, 167, 247, 0.548);
+  }
+  &:focus {
+    background-color: rgba(138, 138, 250, 0.15);
+    border: 1px solid rgba(167, 167, 247, 0.548);
+    &:hover {
+      background-color: rgba(100, 100, 252, 0.15);
+    }
+  }
+}
+
+.label-img {
+  @apply bg-transparent object-cover mb-2 h-10;
+}
+.label-text {
+  @apply text-white leading-3 text-sm;
+}

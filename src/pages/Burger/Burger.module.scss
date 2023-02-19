@@ -1,0 +1,22 @@
+.wrapper {
+}
+
+.inner {
+  @apply grid grid-cols-4 gap-4 p-5;
+}
+
+@media (max-width: 1024px) {
+  .inner {
+    @apply grid-cols-3;
+  }
+}
+@media (max-width: 768px) {
+  .inner {
+    @apply grid-cols-2;
+  }
+}
+@media (max-width: 535px) {
+  .inner {
+    @apply grid-cols-1;
+  }
+}

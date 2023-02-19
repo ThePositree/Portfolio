@@ -1,0 +1,39 @@
+.wrapper {
+	@apply from-slate-900 to-slate-700 bg-gradient-to-b min-h-screen p-5;
+}
+
+.inner-cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	max-width: 1300px;
+	margin: 0 auto;
+	max-height: 800px;
+	overflow: auto;
+	@apply bg-slate-200 shadow-xl rounded-lg p-10;
+}
+
+.icon {
+	@apply text-slate-200;
+}
+
+@media (max-width: 1410px) {
+	.back {
+		@apply border-slate-700;
+	}
+	.icon {
+		@apply text-slate-700;
+	}
+}
+
+@media (max-width: 850px) {
+	.inner-cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 450px) {
+	.inner-cards {
+		grid-template-columns: 1fr;
+	}
+}

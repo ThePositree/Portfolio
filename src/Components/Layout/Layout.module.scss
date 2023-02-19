@@ -1,0 +1,5 @@
+.container {
+	background-image: url('../../assets/bg.jpg');
+	background-size: cover;
+	@apply min-h-screen bg-no-repeat p-20 flex justify-center items-center pt-16;
+}
