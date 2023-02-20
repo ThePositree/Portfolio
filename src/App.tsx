@@ -1,5 +1,5 @@
 import { Provider } from 'react-redux'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 import Layout from './Components/Layout/Layout'
 import Main from './Components/Main/Main'
 import About from './pages/About/About'

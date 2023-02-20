@@ -23,3 +23,9 @@
 	right: 11px;
 	transform: translateY(-50%);
 }
+
+@media (max-width: 425px) {
+	.ul {
+		max-height: 260px;
+	}
+}

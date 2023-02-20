@@ -25,3 +25,20 @@
 	margin: 5px;
 	cursor: pointer;
 }
+
+@media (max-width: 768px) {
+	.checkbox {
+		width: 20px;
+		height: 20px;
+		margin: 2px;
+	}
+	.input {
+		display: none;
+		&:checked + .checkbox {
+			&::after {
+				width: 10px;
+				height: 10px;
+			}
+		}
+	}
+}

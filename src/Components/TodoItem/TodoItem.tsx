@@ -62,7 +62,9 @@ const TodoItem: FC<ITodoItem> = ({ todo }) => {
 		<li className={cn({ [styles.openDesc]: isOpenDesc })} onClick={toggleDesc}>
 			<div className={styles.wrapper}>
 				<div
-					className={cn(styles.inner, { [styles.editInner]: edit })}
+					className={cn(styles.inner, styles.inner1, {
+						[styles.editInner]: edit,
+					})}
 					onClick={e => e.stopPropagation()}
 				>
 					<CheckBox checked={isCompleted} onChange={changeChecked} />
@@ -77,7 +79,10 @@ const TodoItem: FC<ITodoItem> = ({ todo }) => {
 						<span className={styles.title}>{text}</span>
 					)}
 				</div>
-				<div className={styles.inner} onClick={e => e.stopPropagation()}>
+				<div
+					className={cn(styles.inner, styles.inner2)}
+					onClick={e => e.stopPropagation()}
+				>
 					<Button onClick={clickEdit}>
 						{edit ? <RxCross2 color='#afafaf' /> : <MdEdit color='#afafaf' />}
 					</Button>

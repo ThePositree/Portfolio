@@ -6,7 +6,6 @@
 	border-radius: 5px;
 	background-color: #afafaf;
 	font-weight: 600;
-	font-size: 18px;
 	margin-top: 10px;
 }
 
@@ -16,6 +15,7 @@
 
 .title {
 	cursor: default;
+	overflow: auto;
 }
 
 .desc {
@@ -41,6 +41,15 @@
 .inner {
 	display: flex;
 	align-items: center;
+}
+
+.inner1 {
+	flex: 1 0;
+	overflow: hidden;
+}
+
+.inner2 {
+	flex: 0 1 50px;
 }
 
 .editInner {

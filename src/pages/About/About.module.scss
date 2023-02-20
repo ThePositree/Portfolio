@@ -37,3 +37,13 @@
 		right: 10px;
 	}
 }
+@media (max-width: 525px) {
+	.wrapper {
+		position: absolute;
+		width: auto;
+		max-width: 1000px;
+		left: 10px;
+		right: 10px;
+		height: 520px;
+	}
+}
